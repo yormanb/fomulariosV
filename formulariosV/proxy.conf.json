@@ -1,0 +1,12 @@
+{
+    "/backend":{
+        "target": "https://a2ab-181-59-2-29.ngrok.io/api/v1.0/nouser_p/docs/test",
+        "secure": false,
+        "changeOrigin": "true",
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/backend": ""
+          }
+        
+    }
+}

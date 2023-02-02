@@ -1,0 +1,31 @@
+<form>
+  <h2 class="h2 text-center my-3 text-primary">Formulario</h2>
+ <div class="row my-3">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <form [formGroup]="noUserForm" (ngSubmit)="create()">
+            <div class="my-2">
+                <label for="nombre" class="form-label">Nombre: </label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="my-2">
+                <label for="apellido" class="form-label">Apellido: </label>
+                <input type="text" class="form-control" formControlName="lastname">
+            </div>
+            <div class="my-2">
+                <label for="exampleInputPassword1" class="form-label">Archivo 1:</label>
+                <input type="file" (change)="file1($event)" class="form-control" formControlName="archivo1">
+            </div>
+            <div class="my-2">
+                <label for="exampleInputPassword1" class="form-label">Archivo 2:</label>
+                <input type="file" (change)="file2($event)" class="form-control" formControlName="archivo2">
+            </div>
+
+            <button type="submit" class="my-2 btn btn-primary">Aceptar</button>
+        </form>
+    </div>
+    <div class="col-lg-3"></div>
+ </div>
+   
+    
+  </form>
